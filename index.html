@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Михаил Резников - QA Engineer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="#about">Обо мне</a></li>
+        <li><a href="#skills">Навыки</a></li>
+        <li><a href="#contact">Контакты</a></li>
+    </ul>
+</nav>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <img src="1.jpg" alt="Фотозаглушка" class="hero-avatar">
+                <h1>Михаил "ShadSI" Резников</h1>
+                <p>QA Engineer</p>
+                <a href="https://t.me/ShadS1" class="cta-button">Связаться со мной</a>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>Обо мне</h2>
+            <p>Привет! Меня зовут Михаил. Мне 34 и я QA Engineer. Живу в городе Краснодар. Услекаюсь научпопом и видеоиграми, люблю читать. Считаю, что неплохо разбираюсь в компьютерных железках :) В прошлом - профессиональный игрок в дисциплине Modern Warfare. Играл в команде =VF= Virtual Fighter </p>
+        </section>
+
+        <section id="skills" class="skills">
+            <h2>Тестирование API и интеграций</h2>
+            <div class="skills-container">
+                <div class="skill">REST</div>
+                <div class="skill">SOAP</div>
+                <div class="skill">Postman</div>
+                <div class="skill">Swagger</div>
+                <div class="skill">Kafka</div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <h2>Тестирование Web и мобильных приложений</h2>
+            <div class="skills-container">
+                <div class="skill">Figma</div>
+                <div class="skill">HTTP</div>
+                <div class="skill">HTML</div>
+                <div class="skill">CSS</div>
+                <div class="skill">Charles</div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <h2>Логи и мониторинги</h2>
+            <div class="skills-container">
+                <div class="skill">Sentry</div>
+                <div class="skill">Kibana</div>
+                <div class="skill">Grafana</div>
+                <div class="skill">Jaeger</div>
+                <div class="skill">Bash</div>
+            </div>
+        </section>
+
+                <section id="skills" class="skills">
+            <h2>Тестовая документация</h2>
+            <div class="skills-container">
+                <div class="skill">Yandex Tracker</div>
+                <div class="skill">Jira</div>
+                <div class="skill">Test it</div>
+                <div class="skill">Buildin</div>
+                <div class="skill">Miro</div>
+            </div>
+        </section>
+
+                <section id="skills" class="skills">
+            <h2>Работа с базами данных</h2>
+            <div class="skills-container">
+                <div class="skill">Metabase</div>
+                <div class="skill">PostgreSQL</div>
+                <div class="skill">DBeaver</div>
+                <div class="skill">Mongo DB</div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Мои контакты</h2>
+            <p>Email: shadsi91@mail.com</p>
+            <p>Telegram: https://t.me/ShadS1</p>
+            <p>Discord: shadsi</p>
+            <div class="invitation">
+      <div class="invitation-text">Напиши мне~</div>
+      <img class="invitation-gif" src="3.gif" alt="Приглашение написать">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Михаил Резников. Все права защищены.</p>
+    </footer>
+
+    <script>
+document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    });
+});
+</script>
+
+</body>
+</html>
